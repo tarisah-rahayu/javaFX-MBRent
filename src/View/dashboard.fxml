@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.dashboardcon">
+   <children>
+      <AnchorPane layoutX="163.0" layoutY="80.0" prefHeight="319.0" prefWidth="436.0" style="-fx-background-color: E8DEDE;">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="115.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-background-color: E7B2B2;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="85.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@casual-life-3d-id-card-of-woman-in-glasses.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="23.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="156.0" layoutY="15.0" prefHeight="115.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-background-color: E7B2B2;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="85.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@casual-life-3d-three-quarter-back-view-of-young-couple-riding-bicycles%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="28.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Product" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="299.0" layoutY="16.0" prefHeight="115.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-background-color: E7B2B2;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="85.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@casual-life-3d-white-interface-with-pink-lines-1.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="19.0" layoutY="84.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Transaction" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <LineChart fx:id="lineChart" layoutX="19.0" layoutY="146.0" prefHeight="163.0" prefWidth="391.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="400.0" prefWidth="163.0" style="-fx-background-color: E7B2B2;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" prefHeight="84.0" prefWidth="145.0" spacing="25.0" style="-fx-background-color: E7B2B2;">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-electric-bicycle-96.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="148.0" text="MB-RENT" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane layoutX="1.0" layoutY="123.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-customer-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="56.0" layoutY="7.0" mnemonicParsing="false" onAction="#showcustomer" style="-fx-background-color: transparent;" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="166.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-motorcycle-delivery-single-box-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="11.0" mnemonicParsing="false" onAction="#produk" style="-fx-background-color: transparent;" text="Product" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="209.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-transaction-list-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="15.0" mnemonicParsing="false" onAction="#transaksi" style="-fx-background-color: transparent;" text="Transaction" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Line endX="52.0" layoutX="111.0" layoutY="81.0" startX="-111.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="189.0" layoutY="35.0" text="Dashboard" textFill="#861616">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: E7B2B2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.order">
+   <children>
+      <Pane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="25.0" layoutY="12.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-background-color: E8DEDE; -fx-font-size: 12; -fx-font-style: BOLD;" text="Pilih Brand" textFill="#b6b6b6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane layoutX="26.0" layoutY="75.0" prefHeight="305.0" prefWidth="549.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="418.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m2n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="183.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m7n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="71.0" layoutX="181.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="77.0" layoutX="58.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m5n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="77.0" layoutX="301.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m6n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="72.0" layoutX="301.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m3n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="418.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="82.0" layoutX="56.0" layoutY="26.0" onMouseDragEntered="#showOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="103.0" text="Rp 25.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="116.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="129.0" text="ECGO Bike 2 VIN" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="186.0" layoutY="103.0" text="Rp 20.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="178.0" layoutY="116.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="129.0" text="BF GOODRICH Q7" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="104.0" text="Rp 20.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="117.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="130.0" text="NIU Gova 03" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="426.0" layoutY="105.0" text="Rp 30.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="118.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="444.0" layoutY="132.0" text="T1800 " textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="237.0" text="Rp 18.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="250.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="263.0" text="U1 VIAR" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="238.0" text="Rp 25.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="177.0" layoutY="251.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="264.0" text="NIU NGT" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="306.0" layoutY="239.0" text="Rp 20.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="298.0" layoutY="252.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="265.0" text="NIU NQi Sport" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="429.0" layoutY="239.0" text="Rp 15.000/jam" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="252.0" text="Electric Motorcycle" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="427.0" layoutY="265.0" text="VIAR AKASHA 1" textFill="#00000080">
+               <font>
+                  <Font name="Cambria" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

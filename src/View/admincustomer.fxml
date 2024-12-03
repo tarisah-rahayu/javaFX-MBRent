@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.tabelcust">
+   <children>
+      <AnchorPane layoutX="163.0" layoutY="80.0" prefHeight="520.0" prefWidth="534.0" style="-fx-background-color: E8DEDE;">
+         <children>
+            <TextField fx:id="custsearch" layoutX="14.0" layoutY="24.0" prefHeight="26.0" prefWidth="209.0" promptText="Write here" />
+            <TableView fx:id="tabelcustomer" layoutX="15.0" layoutY="63.0" prefHeight="400.0" prefWidth="510.0">
+              <columns>
+                <TableColumn fx:id="id_pelanggan" prefWidth="85.5999755859375" text="ID Customer" />
+                <TableColumn fx:id="email" prefWidth="176.79998779296875" text="Email" />
+                  <TableColumn fx:id="username" prefWidth="118.40005493164062" text="Username" />
+                  <TableColumn fx:id="password" prefWidth="125.5999755859375" text="Password" />
+              </columns>
+            </TableView>
+            <Button layoutX="224.0" layoutY="24.0" mnemonicParsing="false" onAction="#searchCustomer" style="-fx-background-color: #861616;" text="Search" textFill="WHITE" />
+            <Button layoutX="276.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: #861616;" text="Delete" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="600.0" prefWidth="163.0" style="-fx-background-color: E7B2B2;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" prefHeight="84.0" prefWidth="145.0" spacing="25.0" style="-fx-background-color: E7B2B2;">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-electric-bicycle-96.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="18.0" prefWidth="148.0" text="MB-RENT" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane layoutX="1.0" layoutY="123.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-customer-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="56.0" layoutY="7.0" mnemonicParsing="false" onAction="#showcustomer" style="-fx-background-color: transparent;" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="166.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-motorcycle-delivery-single-box-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="11.0" mnemonicParsing="false" onAction="#produk" style="-fx-background-color: transparent;" text="Product" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="209.0" prefHeight="43.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-transaction-list-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="15.0" mnemonicParsing="false" onAction="#transaksi" style="-fx-background-color: transparent;" text="Transaction" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Line endX="52.0" layoutX="111.0" layoutY="81.0" startX="-111.0" stroke="WHITE" />
+            <Button layoutX="60.0" layoutY="272.0" mnemonicParsing="false" onAction="#grafik" style="-fx-background-color: transparent;" text="Grafik" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="60.0" layoutY="311.0" mnemonicParsing="false" onAction="#transaksi" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="169.0" prefHeight="35.0" prefWidth="423.0" />
+      <Label layoutX="189.0" layoutY="35.0" text="Tabel Customer" textFill="#861616">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
